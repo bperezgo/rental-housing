@@ -1,11 +1,14 @@
 import React from 'react';
+import Link from 'next/link';
 
 type HouseProps = {
   children?: React.ReactNode;
   img: string;
+  contentDescription: string;
+  acquireLabel: string;
 };
 
-const House = ({ img }: HouseProps) => {
+const House = ({ img, contentDescription, acquireLabel }: HouseProps) => {
   return (
     <div className='CardHouse__container'>
       <div className='card'>
@@ -30,14 +33,18 @@ const House = ({ img }: HouseProps) => {
             </div>
           </div>
 
-          <div className='content'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            nec iaculis mauris. <a>@bulmaio</a>.<a href='#'>#css</a>{' '}
-            <a href='#'>#responsive</a>
-            <br />
-            <time dateTime='2016-1-1'>11:09 PM - 1 Jan 2016</time>
-          </div>
+          <div className='content'>{contentDescription}</div>
         </div>
+        <footer className='card-footer'>
+          <Link href='/insurance-form' as={`/insurance-form/`} passHref>
+            <span className='AcquireButton__span card-footer-item'>
+              {acquireLabel}
+            </span>
+          </Link>
+          <a href='#' className='card-footer-item'>
+            Edit
+          </a>
+        </footer>
       </div>
     </div>
   );

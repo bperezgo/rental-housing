@@ -1,0 +1,7 @@
+.AcquireButton__span {
+  cursor: pointer;
+  color: blue;
+  &:hover {
+    color: black;
+  }
+}

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <nav className='navbar is-flex Navbar__sticky' role='navigation' aria-label='main navigation'>
+    <nav className='navbar is-flex' role='navigation' aria-label='main navigation'>
       <div className='navbar-brand'>
         <a className='navbar-item' href='https://bulma.io'>
           <img
