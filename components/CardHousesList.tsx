@@ -7,14 +7,12 @@ const defaultHouse = {
   acquireLabel: 'Adquirir',
 };
 
-const CardHousesList = () => {
-  return (
-    <div className='container is-flex-wrap-wrap is-flex is-justify-content-center'>
-      {[1, 2, 3, 4, 5, 6].map((item, key) => (
-        <CardHouse {...defaultHouse} key={key} />
-      ))}
-    </div>
-  );
-};
+const CardHousesList = () => (
+  <div className="container is-flex-wrap-wrap is-flex is-justify-content-center">
+    {[1, 2, 3, 4, 5, 6].map((item) => (
+      <CardHouse {...defaultHouse} key={item} />
+    ))}
+  </div>
+);
 
 export default CardHousesList;

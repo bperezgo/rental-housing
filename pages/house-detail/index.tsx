@@ -1,7 +1,5 @@
 import React from 'react';
 
-const HouseDetail = () => {
-  return <div></div>;
-};
+const HouseDetail = () => <div />;
 
 export default HouseDetail;
