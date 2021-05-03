@@ -21,10 +21,10 @@ const InsuranceForm = () => (
             value="bulma"
           />
           <span className="icon is-small is-left">
-            <i className="fas fa-user"></i>
+            <i className="fas fa-user" />
           </span>
           <span className="icon is-small is-right">
-            <i className="fas fa-check"></i>
+            <i className="fas fa-check" />
           </span>
         </div>
         <p className="help is-success">This username is available</p>
@@ -40,10 +40,10 @@ const InsuranceForm = () => (
             value="hello@"
           />
           <span className="icon is-small is-left">
-            <i className="fas fa-envelope"></i>
+            <i className="fas fa-envelope" />
           </span>
           <span className="icon is-small is-right">
-            <i className="fas fa-exclamation-triangle"></i>
+            <i className="fas fa-exclamation-triangle" />
           </span>
         </div>
         <p className="help is-danger">This email is invalid</p>
@@ -64,7 +64,7 @@ const InsuranceForm = () => (
       <div className="field">
         <label className="label">Message</label>
         <div className="control">
-          <textarea className="textarea" placeholder="Textarea"></textarea>
+          <textarea className="textarea" placeholder="Textarea" />
         </div>
       </div>
 
@@ -72,7 +72,7 @@ const InsuranceForm = () => (
         <div className="control">
           <label className="checkbox">
             <input type="checkbox" />I agree to the{' '}
-            <a href="#">terms and conditions</a>
+            <a href="/">terms and conditions</a>
           </label>
         </div>
       </div>
@@ -92,10 +92,14 @@ const InsuranceForm = () => (
 
       <div className="field is-grouped">
         <div className="control">
-          <button className="button is-link">Submit</button>
+          <button type="button" className="button is-link">
+            Submit
+          </button>
         </div>
         <div className="control">
-          <button className="button is-link is-light">Cancel</button>
+          <button type="button" className="button is-link is-light">
+            Cancel
+          </button>
         </div>
       </div>
     </div>
